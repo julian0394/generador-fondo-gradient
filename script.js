@@ -8,11 +8,11 @@ color2.addEventListener("input", cambiarFondo);
 
 //Cambia el color del fondo por el del color elegido
 function cambiarFondo() {
-    fondo.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+    fondo.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
     crearCss();
 }
 
 //Cambia el texto con el del color elegido
 function crearCss() {
-    h3.textContent = "background: linear-gradient(to right, " + color1.value + ", " + color2.value + ");";
+    h3.textContent = `linear-gradient(to right, ${color1.value}, ${color2.value});`;
 }
